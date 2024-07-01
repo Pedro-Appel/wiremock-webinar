@@ -1,0 +1,21 @@
+{
+  "priority": 100,
+  "request": {
+    "method": "GET",
+    "urlPattern": "/customers/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "documentNumber": "{{ request.path.[1] }}"
+    },
+    "transformers": ["response-template"],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
+
+
+
+

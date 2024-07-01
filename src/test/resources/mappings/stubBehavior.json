@@ -1,0 +1,51 @@
+{
+  "mappings": [
+    {
+      "newScenarioState": "second",
+      "scenarioName": "getCustomer",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/customers/123554"
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "customer.json",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "requiredScenarioState": "second",
+      "newScenarioState": "third",
+      "scenarioName": "getCustomer",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/customers/123554"
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "customer1.json",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "requiredScenarioState": "third",
+      "newScenarioState": "",
+      "scenarioName": "getCustomer",
+      "request": {
+        "method": "GET",
+        "urlPattern": "/customers/123554"
+      },
+      "response": {
+        "status": 200,
+        "bodyFileName": "customer2.json",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}

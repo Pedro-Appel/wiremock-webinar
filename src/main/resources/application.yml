@@ -1,0 +1,13 @@
+feign:
+  application:
+    name: customer
+  client:
+    config:
+      feignName:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+customer:
+  url: "http://localhost:8081"
+
+logging.level.org.example: DEBUG

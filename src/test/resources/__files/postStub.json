@@ -1,0 +1,14 @@
+{
+  "priority": 100,
+  "request": {
+    "method": "POST",
+    "url": "/customers"
+  },
+  "response": {
+    "status": 201,
+    "bodyFileName": "customer.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
