@@ -46,7 +46,7 @@ class CustomerTest {
     public void whenGetCustomers_thenCustomerListShouldBeReturned() {
         assertTrue(customerService.getCustomers()
                 .containsAll(asList(
-                        new CustomerEntity("987654321", "Frank Herbert", "+351 990 998 899"),
-                        new CustomerEntity("321654987", "Isaac Asimov", "+351 990 444 009"))));
+                        new CustomerEntity("123e4567-e89b-12d3-a456-426614174000","987654321", "Frank Herbert", "+351 990 998 899"),
+                        new CustomerEntity("123e4567-e89b-12d3-a456-426614174000","321654987", "Isaac Asimov", "+351 990 444 009"))));
     }
 }

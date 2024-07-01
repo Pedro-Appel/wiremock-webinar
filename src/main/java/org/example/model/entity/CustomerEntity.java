@@ -7,10 +7,10 @@ import lombok.*;
 @Setter
 @Getter
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @ToString
 @EqualsAndHashCode
+@NoArgsConstructor
+@AllArgsConstructor
 public class CustomerEntity {
     @Id
     private String uuid;
