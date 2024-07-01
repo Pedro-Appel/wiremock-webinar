@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: customer
+customer:
+  url: "http://localhost:9900"
+
+
+
+
